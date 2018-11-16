@@ -1,0 +1,30 @@
+
+<div class="background">
+</div>
+
+<div class="menu">
+
+  <mat-toolbar class="tabs mat-elevation-z8">
+    <h1>Bem vindo, {{auth.user.pname}}</h1>
+    <button mat-icon-button (click)="logout()" class="align-right">
+      <mat-icon>exit_to_app</mat-icon>
+    </button>
+  </mat-toolbar>
+
+  <mat-card *ngFor="let database of databases" class="margin">
+      {{database}}
+      <button mat-icon-button (click)="delete(database)" class="align-right">
+        <mat-icon color="warn">delete</mat-icon>
+      </button>
+  </mat-card>
+
+  <mat-card class="margin">
+      <mat-form-field appearance="outline" class="db-name">
+        <input matInput #dbname placeholder="Nome da Base de Dados" required>
+      </mat-form-field>
+      <button mat-icon-button color="primary" (click)="create(dbname.value)" class="align-right">
+        <mat-icon>add</mat-icon>
+      </button>
+  </mat-card>
+
+</div>

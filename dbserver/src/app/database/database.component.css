@@ -1,0 +1,39 @@
+.menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.margin {
+    margin: 14px;
+}
+
+.fit-screen {
+    width: 100%;
+}
+
+.content {
+    position: relative;
+    overflow: auto;
+}
+
+.tabs {
+    position: sticky;
+    top: 0;
+    z-index: 12;
+}
+
+.tab { 
+    padding: 4px;
+    min-width: 42px;
+}
+
+.align-right {
+    position: absolute;
+    right: 14px;
+}
+
+.db-name {
+    width: 80%;
+}

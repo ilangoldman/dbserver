@@ -1,0 +1,36 @@
+<div class="login">
+
+  <section class="mat-typography">
+    <div class="header text align-center margin">
+      <h1>Seja Bem Vindo!</h1>
+      <h3>Por favor insira suas informações abaixo.</h3> 
+    </div>
+
+    <div id="content" class="align-center" [ngClass]="content">
+      <mat-form-field appearance="outline" class="fit-screen">
+        <input matInput #email placeholder="Username" (focus)="clearErro()" required>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="fit-screen">
+        <input matInput #name placeholder="Nome" (focus)="clearErro()" required>
+      </mat-form-field>
+      
+      <!-- <br> -->
+      <mat-form-field appearance="outline" class="fit-screen">
+        <input matInput #pwd type="password" placeholder="Senha" (focus)="clearErro()" required>
+      </mat-form-field>
+      <br>
+      
+      <button mat-raised-button id="login-button"  (click)="cadastro(email.value,name.value,pwd.value)" color="primary" [ngClass]="loginStatus" class="mat-elevation-z12 login-button fit-screen"></button>
+      
+    </div>
+    
+
+    <div class="footer text">
+      <button mat-button class="btn-cadastro" (click)="goto('login')">
+        Já tem acesso? Clique aqui para entrar!
+      </button>
+    </div>
+
+  </section>
+</div>

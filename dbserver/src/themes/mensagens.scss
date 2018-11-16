@@ -1,0 +1,26 @@
+@mixin mensagens-theme($theme) {
+
+    $primary: map-get($theme, primary);
+    $accent: map-get($theme, accent);
+    $warn: map-get($theme, warn);
+    $background: map-get($theme, background);
+    $foreground: map-get($theme, foreground);
+
+    .mensagem-item {
+        .status-mensagem.nova {
+            border-left: 5px solid mat-color($accent);
+        }
+
+        &:hover, &:active, &:focus {
+            background-color: mat-color($background, hover);
+        }
+
+        &.selected {
+            background-color: mat-color($primary, lighter, 0.5);
+            color: mat-color($foreground, text);
+        }
+
+    }
+
+}
+

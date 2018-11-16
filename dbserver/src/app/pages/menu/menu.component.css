@@ -1,0 +1,141 @@
+.menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.content {
+    position: relative;
+    overflow: auto;
+}
+
+.tabs {
+    position: sticky;
+    top: 0;
+    z-index: 12;
+}
+
+.tab { 
+    padding: 4px;
+    min-width: 42px;
+}
+
+::ng-deep .tab:focus {
+    outline: none;
+    background-color: inherit !important;
+
+}
+
+.align-tabs {
+    width: 100vw;    
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.router {
+    /* margin-top: 64px; */
+    /* overflow: auto; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Backup */
+
+/* .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+
+.align-items {
+    text-align: center;    
+    display: flex;
+    justify-content: space-between;
+}
+
+.subheader {
+    border-top: 1px solid whitesmoke;
+    height: 40px;
+}
+
+.header .user-menu {
+    font-size: .6875rem;
+    width: 60px;
+    text-align: right;
+}
+
+.header span {
+    text-align: center;
+}
+
+.icon {
+    padding-right: 14px;
+}
+
+.sidenav-container {
+    position: absolute;
+    top: 95px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.list-button {
+    width: 100%;
+    height: 100%;
+    text-align: left;
+}
+
+#user-info p, #user-info .progress-spinner, #user-info .info-text {
+    display: inline-block;
+}
+
+.info-text p {
+    margin-bottom: 0;
+}
+
+.progress-spinner {
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+.nivel-icon {
+    position: absolute;
+    top: 84px;
+    left: 22px;
+    font-size: 40px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footer .list-button {
+    width: 100%;
+    height: 100%;
+} */
+
+/* @media only screen and (max-width: 960px) {
+    sidenav.open()
+} */
